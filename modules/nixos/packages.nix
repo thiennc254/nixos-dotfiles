@@ -1,0 +1,44 @@
+{ pkgs, ... }:
+{
+  environment.systemPackages = with pkgs; [
+    home-manager
+    vim
+    nano
+    wget
+    curl
+    unzip
+    p7zip
+    git
+    btop
+    ripgrep
+    tree
+    jq
+    fd
+    fzf
+    bat
+    upower
+    mtr
+    ncdu
+    rsync
+    powertop
+    linuxPackages.cpupower
+    zoxide
+    fastfetch
+    lm_sensors
+    intel-gpu-tools
+    pciutils
+    usbutils
+    smartmontools
+    ethtool
+    bluez
+    gnome-keyring
+    seahorse
+    brightnessctl
+    wl-clipboard
+    trash-cli
+    xdg-terminal-exec
+    ddcutil
+    intel-gpu-tools
+    uwsm
+  ];
+}
