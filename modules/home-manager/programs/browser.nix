@@ -1,4 +1,4 @@
-{...}: {
+{pkgs, ...}: {
   programs.firefox = {
     enable = true;
 
@@ -6,6 +6,10 @@
       DisableTelemetry = true;
       DisablePocket = true;
     };
+
+    nativeMessagingHosts = [
+      pkgs.pywalfox-native
+    ];
 
     profiles.azty = {
       id = 0;
