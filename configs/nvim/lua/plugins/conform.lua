@@ -4,13 +4,13 @@ return {
   opts = {
     formatters_by_ft = {
       lua = { "stylua" },
-      nix = { "nixpkgs-fmt" },
+      nix = { "alejandra" },
       python = { "black" },
+      go = { "gofumpt" },
       javascript = { "prettierd" },
       typescript = { "prettierd" },
       sh = { "shfmt" },
       cpp = { "clang-format" },
-      go = { "gofumpt" },
       ["_"] = { "trim_whitespace" },
     },
   },

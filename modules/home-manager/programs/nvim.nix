@@ -1,4 +1,8 @@
-{ config, pkgs, ... }: {
+{
+  config,
+  pkgs,
+  ...
+}: {
   home.packages = with pkgs; [
     neovim
     tree-sitter
@@ -17,6 +21,8 @@
     # Nix
     nil
     alejandra
+    statix
+    deadnix
 
     # Python
     pyright
@@ -35,6 +41,10 @@
     # Go
     gopls
     gofumpt
+
+    # Markdown
+    marksman
+    markdownlint-cli2
   ];
 
   home.file.".config/nvim" = {

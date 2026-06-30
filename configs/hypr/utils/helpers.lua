@@ -25,10 +25,8 @@ M.window = function(match, effects)
 end
 
 M.alpha_rgba = function(rgb_str, alpha)
-	-- Tìm chuỗi hex bên trong dấu ngoặc của rgb(...)
 	local hex = rgb_str:match("rgb%((%x+)%)")
 	if hex then
-		-- Trả về đúng cấu trúc bạn vừa test thành công: rgba(HEX + ALPHA)
 		return "rgba(" .. hex .. alpha .. ")"
 	end
 	return rgb_str

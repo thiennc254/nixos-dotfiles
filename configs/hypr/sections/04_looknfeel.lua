@@ -7,7 +7,7 @@
 local helpers = hypr.helpers
 local noctalia = require("noctalia")
 
-noctalia.apply_theme()
+-- noctalia.apply_theme()
 
 hl.config({
 	general = {
@@ -16,7 +16,8 @@ hl.config({
 		border_size = 2,
 
 		col = {
-			active_border = helpers.alpha_rgba(noctalia.colors.primary, "aa"),
+			-- active_border = helpers.alpha_rgba(noctalia.colors.primary, "cc"),
+			active_border = "rgba(ccccccaa)",
 			inactive_border = helpers.alpha_rgba(noctalia.colors.surface, "ff"),
 		},
 
@@ -26,7 +27,7 @@ hl.config({
 	},
 
 	decoration = {
-		rounding = 15,
+		rounding = 10,
 		rounding_power = 2,
 
 		active_opacity = 1.0,
