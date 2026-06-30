@@ -15,6 +15,8 @@
       settings = {
         "media.ffmpeg.vaapi.enabled" = true;
         "gfx.webrender.all" = true;
+        "media.av1.enabled" = false;
+        "media.mediasource.format-reader.av1" = false;
       };
     };
   };
