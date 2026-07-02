@@ -15,6 +15,7 @@ in {
 
   home.packages = with pkgs; [
     brave
+    kdePackages.falkon
 
     kdePackages.dolphin
     kdePackages.kdegraphics-thumbnailers
