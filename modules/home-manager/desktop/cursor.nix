@@ -4,6 +4,6 @@
     x11.enable = true;
     package = pkgs.catppuccin-cursors.mochaDark;
     name = "catppuccin-mocha-dark-cursors";
-    size = 20;
+    size = 18;
   };
 }
